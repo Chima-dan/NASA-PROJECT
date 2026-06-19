@@ -5,8 +5,14 @@ const {
     abortLaunchById,
  } = require('../../models/launches.model');
 
+ const {
+    getPagination,
+ } = require('../../services/query');
+
 async function httpGetAllLaunches(req, res) {
-    return res.status(200).json(await getAllLaunches());
+    const { skip, limit } = getPagination(req.query);
+    const launches = await getAllLaunches(skip, limit);
+    return res.status(200).json(launches);
 }
 
 async function httpAddNewLaunch(req, res) {
@@ -26,13 +32,19 @@ async function httpAddNewLaunch(req, res) {
         });
     }
 
-    await scheduleNewLaunch(launch);
+    const newLaunch = await scheduleNewLaunch(launch);
     console.log(launch);
-    return res.status(201).json(launch);
+    return res.status(201).json(newLaunch);
 }
 
 async function httpAbortLaunch(req, res) {
     const launchId = Number(req.params.id);
+
+    if (isNaN(launchId)) {
+        return res.status(400).json({
+            error: 'Invalid launch ID',
+        });
+    }
 
     const existsLaunch = await existsLaunchWithId(launchId);
     if (!existsLaunch) {
