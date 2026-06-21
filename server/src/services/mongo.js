@@ -1,6 +1,14 @@
 const mongoose = require('mongoose');
+const dotenv = require('dotenv');
 
-const MONGO_URL = process.env.MONGO_URL
+dotenv.config();
+
+const MONGO_URL = process.env.MONGO_URL;
+
+if (!MONGO_URL) {
+    throw new Error('MONGO_URL is not defined');
+}
+
 
 mongoose.connection.once('open', () =>{
     console.log('MongoDB connection ready!');
