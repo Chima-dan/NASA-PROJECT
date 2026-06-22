@@ -16,15 +16,17 @@ function isHabitablePlanet(planet) {
 function loadPlanetsData() {
   return new Promise((resolve, reject) => {
 
+    const planetPromises = [];
+
     fs.createReadStream(path.join(__dirname, '..', '..', 'data', 'kepler_data.csv'))
       .pipe(parse({
           comment: '#',
           columns: true,
         })
       )
-      .on('data', async (data) => {
+      .on('data', (data) => {
         if (isHabitablePlanet(data)) {
-          savePlanet(data);
+          planetPromises.push(savePlanet(data));
         }
       })
       .on('error', (err) => {
@@ -32,11 +34,16 @@ function loadPlanetsData() {
         reject(err);
       })
       .on('end', async () => {
+        try{
+          await Promise.all(planetPromises);
 
         const countPlanetsFound = (await getAllPlanets()).length;
         console.log(`${countPlanetsFound} habitable planets found!`);
         resolve();
-      });
+      } catch(err) {
+        reject(err);
+      }
+    });
   });
 }
 
