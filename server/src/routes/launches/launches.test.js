@@ -1,5 +1,8 @@
+process.env.MONGO_URL = 'mongodb://localhost:27017/nasa';
+
 const request = require('supertest');
 const app = require('../../app');
+
 const {
    mongoConnect,
    mongoDisconnect, 
@@ -31,20 +34,20 @@ describe('Test POST/launches', () => {
     const completeLaunchData = {
             mission: 'USS Enterprise',
             rocket: 'NCC 1701-D',
-            target: 'Kepler-186 f',
+            target: 'Kepler-442 b',
             launchDate: 'January 4, 2028',
     };
 
     const launchDataWithoutDate = {
         mission: 'USS Enterprise',
         rocket: 'NCC 1701-D',
-        target: 'Kepler-186 f',
+        target: 'Kepler-442 b',
     };
 
     const launchDataWithInvalidDate = {
         mission: 'USS Enterprise',
         rocket: 'NCC 1701-D',
-        target: 'Kepler-186 f',
+        target: 'Kepler-442 b',
         launchDate: 'zoot',
     }
 
