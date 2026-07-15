@@ -1,3 +1,7 @@
+const dns = require('dns');
+
+dns.setServers(['8.8.8.8', '8.8.4.4']);
+
 const http = require('http');
 
 require('dotenv').config();

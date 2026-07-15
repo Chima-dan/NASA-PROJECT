@@ -1,4 +1,4 @@
-process.env.MONGO_URL = 'mongodb://localhost:27017/nasa';
+// process.env.MONGO_URL = 'mongodb://localhost:27017/nasa';
 
 const request = require('supertest');
 const app = require('../../app');
