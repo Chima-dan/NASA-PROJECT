@@ -17,6 +17,7 @@ This project demonstrates full-stack JavaScript development, API design, databas
 - Responsive React frontend
 
 **Technologies Used**
+
 *Backend*
 - Node.js
 - Express.js
