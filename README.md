@@ -26,10 +26,12 @@ This project demonstrates full-stack JavaScript development, API design, databas
 - Jest
 - Morgan
 - dotenv
+  
 *Frontend*
 - React
 - JavaScript
 - CSS
+  
 *DevOps*
 - Docker
 - Git
