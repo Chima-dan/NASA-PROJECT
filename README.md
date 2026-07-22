@@ -1,10 +1,11 @@
-🚀 NASA Mission Control
+# 🚀 NASA Mission Control
 
 A full-stack mission control dashboard inspired by NASA's launch management systems.
 The application allows users to schedule new space launches, monitor upcoming missions, view launch history, and abort future launches through a responsive React interface backed by a RESTful Node.js API.
 This project demonstrates full-stack JavaScript development, API design, database integration, testing, containerization, and production-ready deployment practices.
 
-*Features*
+## 💡*Features*
+
 - Schedule new launches
 - View upcoming launches
 - View launch history
@@ -16,7 +17,7 @@ This project demonstrates full-stack JavaScript development, API design, databas
 - Automated API tests using Jest
 - Responsive React frontend
 
-**Technologies Used**
+## ⚙**Technologies Used**
 
 *Backend*
 - Node.js
@@ -38,7 +39,7 @@ This project demonstrates full-stack JavaScript development, API design, databas
 - GitHub
 
 
-**Project Structure**
+## 🎦**Project Structure**
 
 - client/
 - server/
@@ -46,7 +47,7 @@ This project demonstrates full-stack JavaScript development, API design, databas
 - package.json
 
 
-**Installation**
+## ⚙**Installation**
 
 </> Bash
 
@@ -54,7 +55,7 @@ git clone https://github.com/Chima-dan/NASA-PROJECT.git
 cd NASA-PROJECT
 npm install
 
-**Environment Variables**
+## 🚂**Environment Variables**
 
 *Create*
 
@@ -67,7 +68,7 @@ npm install
 MONGO_URL=your_mongodb_connection_string
 PORT=8000
 
-*Run locally*
+## ▶**Run locally**
 
 </> Bash
 
@@ -81,7 +82,7 @@ http://localhost:3000
 
 http://localhost:8000/v1
 
-**Docker**
+## 🐳**Docker**
 
  *Build*
  
@@ -93,7 +94,7 @@ docker build -t nasa-project .
 </> Bash
 docker run -p 8000:8000 --env-file server/.env nasa-project
 
-**API Endpoints**
+## 📡**API Endpoints**
 
   Method | Endpoint         | Description                
 | ------ | ---------------- | -------------------------- |
@@ -102,12 +103,12 @@ docker run -p 8000:8000 --env-file server/.env nasa-project
 | DELETE | /v1/launches/:id | Abort launch               |
 | GET    | /v1/planets      | Retrieve habitable planets |
 
-*Testing*
+## 🧪**Testing**
 
 </> Bash
 npm test
 
-**Lessons learned**
+## 📚**Lessons learned**
 
 During this project I gained hands-on experience with:
 - REST API development
@@ -119,7 +120,7 @@ During this project I gained hands-on experience with:
 - Deployment preparation
 - Debugging production issues
 
-**Future improvements**
+## 🚀**Future improvements**
 
 - User authentication
 - Launch notifications
@@ -128,7 +129,11 @@ During this project I gained hands-on experience with:
 - Kubernetes deployment
 - AWS deployment
 
-**Author**
+## 🌏**Live Demo**
+
+*Coming soon...*
+
+## 👨‍💻**Author**
 
 *Amaechi Chimauche Daniel*
 *GitHub*
