@@ -49,6 +49,7 @@ This project demonstrates full-stack JavaScript development, API design, databas
 **Installation**
 
 </> Bash
+
 git clone https://github.com/Chima-dan/NASA-PROJECT.git
 cd NASA-PROJECT
 npm install
@@ -60,30 +61,40 @@ npm install
 - server/.env
 
 *Add*
+
 </> env
+
 MONGO_URL=your_mongodb_connection_string
 PORT=8000
 
 *Run locally*
+
 </> Bash
+
 npm run watch
 
 **Frontend**
+
 http://localhost:3000
 
 **Backend**
+
 http://localhost:8000/v1
 
 **Docker**
+
  *Build*
+ 
 </> Bash
 docker build -t nasa-project .
 
 *Run*
+
 </> Bash
 docker run -p 8000:8000 --env-file server/.env nasa-project
 
 **API Endpoints**
+
   Method | Endpoint         | Description                
 | ------ | ---------------- | -------------------------- |
 | GET    | /v1/launches     | Retrieve launches          |
@@ -92,6 +103,7 @@ docker run -p 8000:8000 --env-file server/.env nasa-project
 | GET    | /v1/planets      | Retrieve habitable planets |
 
 *Testing*
+
 </> Bash
 npm test
 
@@ -108,6 +120,7 @@ During this project I gained hands-on experience with:
 - Debugging production issues
 
 **Future improvements**
+
 - User authentication
 - Launch notifications
 - TypeScript migration
@@ -116,6 +129,7 @@ During this project I gained hands-on experience with:
 - AWS deployment
 
 **Author**
+
 *Amaechi Chimauche Daniel*
 *GitHub*
 *https://github.com/Chima-dan*
