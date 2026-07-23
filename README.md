@@ -20,40 +20,60 @@ This project demonstrates full-stack JavaScript development, API design, databas
 ## ⚙**Technologies Used**
 
 *Backend*
-- Node.js
-- Express.js
-- MongoDB
-- Mongoose
-- Jest
-- Morgan
-- dotenv
+ - Node.js
+ - Express.js
+ - MongoDB
+ - Mongoose
+ - Jest
+ - Morgan
+ - dotenv
   
 *Frontend*
-- React
-- JavaScript
-- CSS
+ - React
+ - JavaScript
+ - CSS
+
+*Testing*
+ - Jest
+ - Supertest
   
 *DevOps*
-- Docker
-- Git
-- GitHub
+ - Docker
+ - Git
+ - GitHub
 
 
 ## 🎦**Project Structure**
 
-- client/
-- server/
-- Dockerfile
-- package.json
+NASA-PROJECT
+│
+├── client/
+│   ├── src/
+│   └── public/
+│
+├── server/
+│   ├── src/
+│   ├── data/
+│   └── public/
+│
+├── Dockerfile
+├── package.json
+└── README.md
 
 
 ## ⚙**Installation**
 
-</> Bash
-
+```bash
 git clone https://github.com/Chima-dan/NASA-PROJECT.git
+```
+
+```bash
 cd NASA-PROJECT
+```
+
+```bash
 npm install
+```
 
 ## 🚂**Environment Variables**
 
@@ -81,16 +101,18 @@ http://localhost:3000
 http://localhost:8000/v1
 
 ## 🐳**Docker**
- *Build*
- 
-</> Bash
 
+ ### Build Image
+
+```bash
 docker build -t nasa-project .
+```
 
-*Run*
+### Run Container
 
-</> Bash
+```bash
 docker run -p 8000:8000 --env-file server/.env nasa-project
+```
 
 ## 📡**API Endpoints**
 
@@ -114,25 +136,37 @@ During this project I gained hands-on experience with:
 - MongoDB Atlas
 - Mongoose ODM
 - Jest API testing
+- CI/CD with GitHub Actions
 - Docker containerization
 - Environment variable management
 - Deployment preparation
 - Debugging production issues
 
+## 🔍 Challenges Solved
+
+*During development I encountered and resolved several real-world engineering problems, including:*
+
+- DNS resolution issues affecting MongoDB Atlas connectivity
+- Docker image build and deployment troubleshooting
+- Production environment configuration using environment variables
+- REST API testing with Jest and Supertest
+- MongoDB Atlas integration and data persistence
+
 ## 🚀**Future improvements**
 
-- User authentication
-- Launch notifications
-- TypeScript migration
-- CI/CD pipeline
-- Kubernetes deployment
 - AWS deployment
-
+- TypeScript migration
+- Kubernetes deployment
+- Email notifications
+  
 ## 🌏**Live Demo**
-*Coming soon...*
+*Deployment in progress.*
 
 ## 👨‍💻**Author**
 
 *Amaechi Chimauche Daniel*
-*GitHub*
+# *GitHub*
 *https://github.com/Chima-dan*
+# *LinkedIn*
+*linkedin.com/in/Amaechi-Chima*
+
