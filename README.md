@@ -117,12 +117,12 @@ docker run -p 8000:8000 --env-file server/.env nasa-project
 
 ## 📡**API Endpoints**
 
-  Method | Endpoint         | Description                
-| ------ | ---------------- | -------------------------- |
-| GET    | /v1/launches     | Retrieve launches          |
-| POST   | /v1/launches     | Schedule launch            |
-| DELETE | /v1/launches/:id | Abort launch               |
-| GET    | /v1/planets      | Retrieve habitable planets |
+| Method | Endpoint | Description |
+|--------|----------|-------------|
+| GET | /v1/launches | Retrieve launches |
+| POST | /v1/launches | Schedule a new launch |
+| DELETE | /v1/launches/:id | Abort a scheduled launch |
+| GET | /v1/planets | Retrieve habitable planets |
 
 ## 🧪**Testing**
 
@@ -159,15 +159,17 @@ During this project I gained hands-on experience with:
 - TypeScript migration
 - Kubernetes deployment
 - Email notifications
+
+## 📄 License
+
+This project is licensed under the MIT License.
   
 ## 🌏**Live Demo**
-*Deployment in progress.*
+*🚧 Deployment coming soon. This application will be deployed to AWS as part of my cloud learning journey.*
 
-## 👨‍💻**Author**
+## 👨‍💻 Author
 
-*Amaechi Chimauche Daniel*
-# *GitHub*
-*https://github.com/Chima-dan*
-# *LinkedIn*
-*linkedin.com/in/Amaechi-Chima*
+**Amaechi Chimauche Daniel**
 
+- GitHub: https://github.com/Chima-dan
+- LinkedIn: https://linkedin.com/in/Amaechi-Chima
