@@ -50,6 +50,7 @@ This project demonstrates full-stack JavaScript development, API design, databas
 ## ⚙**Installation**
 
 </> Bash
+
 git clone https://github.com/Chima-dan/NASA-PROJECT.git
 cd NASA-PROJECT
 npm install
@@ -57,9 +58,11 @@ npm install
 ## 🚂**Environment Variables**
 
 *Create*
+
 - server/.env
 
 *Add*
+
 </> env
 
 MONGO_URL=your_mongodb_connection_string
@@ -68,6 +71,7 @@ PORT=8000
 ## ▶**Run locally**
 
 </> Bash
+
 npm run watch
 
 **Frontend**
@@ -80,6 +84,7 @@ http://localhost:8000/v1
  *Build*
  
 </> Bash
+
 docker build -t nasa-project .
 
 *Run*
@@ -99,6 +104,7 @@ docker run -p 8000:8000 --env-file server/.env nasa-project
 ## 🧪**Testing**
 
 </> Bash
+
 npm test
 
 ## 📚**Lessons learned**
