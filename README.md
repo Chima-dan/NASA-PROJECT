@@ -46,19 +46,20 @@ This project demonstrates full-stack JavaScript development, API design, databas
 ## 🎦**Project Structure**
 
 NASA-PROJECT
-│
-├── client/
-│   ├── src/
-│   └── public/
-│
-├── server/
-│   ├── src/
-│   ├── data/
-│   └── public/
-│
-├── Dockerfile
-├── package.json
-└── README.md
+
+- │
+- ├── client/
+- │   ├── src/
+- │   └── public/
+- │
+- ├── server/
+- │   ├── src/
+- │   ├── data/
+- │   └── public/
+- │
+- ├── Dockerfile
+- ├── package.json
+- └── README.md
 
 
 ## ⚙**Installation**
